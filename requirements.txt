@@ -1,0 +1,7 @@
+# Direct Python dependencies of this dbt project.
+# dbt-core and dbt-fabric are pinned to the team standard; scripts/setup-dbt.ps1 checks these
+# lines against its VERSION PINS block and stops if they differ. Both are listed so that pip
+# resolves them together: dbt-fabric 1.10.x allows any dbt-core >=1.10.0.
+# Add other direct dependencies with exact pins (==), then run setup-dbt.ps1 -UpdateLock.
+dbt-core==1.10.15
+dbt-fabric==1.10.1

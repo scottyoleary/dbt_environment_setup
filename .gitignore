@@ -426,3 +426,9 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+
+# dbt / Python local artifacts (added by scripts/setup-dbt.ps1)
+.venv/
+target/
+dbt_packages/
+logs/
